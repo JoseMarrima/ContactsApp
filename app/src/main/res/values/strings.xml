@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Contacts Sample App</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="phone">phone</string>
+    <string name="upload">upload</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="choose_image">Choose image</string>
+    <string name="toolbar_title">Contacts</string>
+</resources>

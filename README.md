@@ -38,6 +38,8 @@ This is a simple Contacts app based on Model–View–Viewmodel (MVVM) clean arc
 * Glide for loading images
 * AppCompat, CardView, RecyclerView 
 * RxAndroid
+* Mockito
+* Junit
 
 
 ## Requirements

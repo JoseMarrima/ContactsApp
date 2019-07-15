@@ -1,6 +1,6 @@
 # ContactsApp
 
-This is a simple Contacts app based on Model–View–Viewmodel (MVVM) clean architecture and material design.
+This is a simple Contacts app based on Model–View–Viewmodel (MVVM), Architecture Components and Unit Testing Using Mockito and Junit. This is an app that presents a list of cards in the main page, and each card on this main page will contain the name, email address, profile picture, phone number, call button and email button. Additionally, this main page will contain a floating action button, so a new contact card can be added. At last, in this main page have an action bar with a search button and another button that will display my own contact details.
 
 
 ## Screenshots and Gif

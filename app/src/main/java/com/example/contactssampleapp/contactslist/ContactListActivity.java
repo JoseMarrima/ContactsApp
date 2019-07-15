@@ -94,7 +94,7 @@ public class ContactListActivity extends AppCompatActivity {
         if (requestCode == NEW_CONTACT_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
             Contact contact = new Contact(data.getStringExtra(AddContactActivity.EXTRA_NAME),
                                             data.getStringExtra(AddContactActivity.EXTRA_EMAIL),
-                                            data.getIntExtra(AddContactActivity.EXTRA_PHONE, 0),
+                                            data.getLongExtra(AddContactActivity.EXTRA_PHONE, 0),
                                             data.getStringExtra(AddContactActivity.EXTRA_IMAGE));
             Log.i(TAG, "onActivityResult: " + contact.getImage());
             mContactListViewModel.insertContact(contact);

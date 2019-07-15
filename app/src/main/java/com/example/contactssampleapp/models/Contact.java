@@ -25,13 +25,13 @@ public class Contact {
 
     @ColumnInfo
     @NonNull
-    private int phone_number;
+    private long phone_number;
 
     @ColumnInfo
     @NonNull
     private String image;
 
-    public Contact(String name, String email, int phone_number, String image) {
+    public Contact(String name, String email, long phone_number, String image) {
         this.name = name;
         this.email = email;
         this.phone_number = phone_number;
@@ -54,7 +54,7 @@ public class Contact {
         this.email = email;
     }
 
-    public int getPhone_number() {
+    public long getPhone_number() {
         return phone_number;
     }
 

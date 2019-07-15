@@ -35,7 +35,7 @@ public class AddContactActivity extends AppCompatActivity {
     private ImageView imageView;
     private Uri selectedImageURI;
     private String name, email;
-    private int phone;
+    private long phone;
     private String imagePath;
     private static final String IMAGE_DIRECTORY = "/jose";
     private static final String TAG = "AddContactActivity";
@@ -72,7 +72,7 @@ public class AddContactActivity extends AppCompatActivity {
             } else {
                 name = editTextName.getText().toString();
                 email = editTextEmail.getText().toString();
-                phone = Integer.parseInt(editTextPhoneNumber.getText().toString());
+                phone = Long.parseLong(editTextPhoneNumber.getText().toString());
                 replyIntent.putExtra(EXTRA_NAME, name);
                 replyIntent.putExtra(EXTRA_EMAIL, email);
                 replyIntent.putExtra(EXTRA_PHONE, phone);

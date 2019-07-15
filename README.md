@@ -52,6 +52,6 @@ This is a simple Contacts app based on Model–View–Viewmodel (MVVM), Architec
 
 ## Developed By
 
-Jose Marrima - benderspor@gmail.com
+Jose Marrima
 
 Project Link - http://bit.ly/ContactsSampleApp

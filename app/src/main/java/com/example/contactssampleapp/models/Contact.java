@@ -3,6 +3,7 @@ package com.example.contactssampleapp.models;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.databinding.BindingAdapter;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -75,5 +76,17 @@ public class Contact {
         Glide.with(view.getContext())
                 .load(imageUrl).apply(new RequestOptions().circleCrop())
                 .into(view);
+    }
+
+    @Override
+    public boolean equals(@Nullable Object obj) {
+        if(obj == null) {
+            return false;
+        }
+        if(getClass() != obj.getClass()) {
+            return false;
+        }
+        Contact contact = (Contact) obj;
+        return contact.getPhone_number() == getPhone_number();
     }
 }
